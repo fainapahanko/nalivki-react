@@ -1,13 +1,547 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Merriweather:wght@300&family=Oswald:wght@500&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.section{
+    margin: 0px;
+    padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.social-media-div{
+    position: absolute;
+    top: 280px;
+    left: 30px;
 }
+
+.social-icon{
+    font-size: 50px;
+    color: white;
+    margin: 10px;
+}
+
+/* About Section starts */
+.wrapper-div-about{
+    background-image: url(../src/imgs/wood.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: white;
+} 
+
+.navigation-black-shadow {
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0));
+}
+
+.navigation h5{
+    font-size: 30px;
+}
+
+.black-line-nav{
+    margin: 0px 10px;
+    width: 50px;
+    height: 1px;
+    background-color: white;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.box:first-child > span { 
+    margin-right: auto; 
+}
+  
+.box:last-child  > span { 
+    margin-left: auto;  
+}
+
+.nav-items{
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-nalivki-text{
+    margin-right: 100px;
+    color: white;
+    border: 1px solid white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.about-nalivki-header{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-nalivki-header h2{
+    font-size: 30px;
+}
+
+.img-about-bar{
+    border: 4px solid white;
+    -webkit-box-shadow: 18px 25px 0px 9px #A82020;
+    -moz-box-shadow: 18px 25px 0px 9px #A82020;
+    box-shadow: 18px 25px 0px 9px #A82020;
+}
+
+.picture-div .img{
+    background-image: url(../src/imgs/about-img.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100%;
+    height: 400px;
+    margin-left: 120px;
+}
+
+.about-nalivki-paragraph p{
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+
+/* Main Page starts */
+
+.wrapper-div{
+    background-color: #C91D1D;
+    height: 100vh;
+}
+
+.navigation-white{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    color: white;
+    align-items: center;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-size: 24px;
+    font-weight: 300;
+} 
+
+.white-line-nav{
+    margin: 0px 10px;
+    width: 50px;
+    height: 1px;
+    background-color: white;
+}
+
+.main-div-two-bottles-div{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+    border-radius: 30px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    transition-duration: 1s;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #C91D1D;
+    border: rgba(255, 255, 255, 0.6);
+}
+
+.button-div{
+    text-align: center;
+}
+
+.circle1{
+    background-color: white;
+    top: 100px;
+    right: 150px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.circle2{
+    background-color: white;
+    top: 140px;
+    right: 170px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.circle3{
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    right: 130px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.bottle{
+    width: 70%;
+    padding: 10px;
+}
+
+.bottle-1{
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.bottle-2{
+    margin-right: 120px;
+    padding-right: 40px;
+    margin-left: 40px;
+}
+
+.button-1 {
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.button-2 {
+    margin-right: 120px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* Contact part */
+
+.map-div{
+    background-image: url(../src/imgs/map.png);
+    height: 70vh;
+    width: 100vw;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.contact-info-div{
+    height: 30vh;
+    width: 100vw;
+    padding: 40px 200px;
+}
+
+.contacts-div-header h2{
+    font-size: 29px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 2300px) {
+    .navigation h5{
+        font-size: 24px;
+    }  
+
+    .about-nalivki-header h2{
+        font-size: 40px;
+    }
+
+    .picture-div .img{
+        background-image: url(../src/imgs/about-img.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+
+    .contacts h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: white !important;
+    }
+
+    .contacts a {
+        color: white !important;
+        text-decoration: none
+    }
+} 
+
+@media only screen and (max-width: 2000px) {
+    .navigation h5{
+        font-size: 20px;
+    }  
+
+    .about-nalivki-header h2{
+        font-size: 30px;
+    }
+
+    .picture-div .img{
+        background-image: url(../src/imgs/about-img.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+} 
+
+@media only screen and (max-width: 1800px) {
+    .navigation h5{
+        font-size: 16px;
+    }  
+
+    .picture-div .img{
+        background-image: url(../src/imgs/about-img.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+
+    .about-nalivki-paragraph p{
+        font-size: 16px;
+    }
+} 
+
+@media only screen and (max-width: 1600px) {
+    .navigation h5{
+        font-size: 12px;
+    }  
+
+    .about-nalivki-header h2{
+        font-size: 22px;
+    }
+
+    .about-nalivki-text{
+        margin-right: 50px;
+    }
+
+    .picture-div .img{
+        background-image: url(../src/imgs/about-img.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+
+    .about-nalivki-paragraph p{
+        font-size: 15px;
+    }
+} 
+
+@media only screen and (max-width: 996px) {
+    .bottle{
+        width: 100%;
+    }
+
+    .contact-info-div{
+        height: 30vh;
+        width: 100vw;
+        padding: 40px 50px;
+    }
+
+    .bottle-1{
+        margin-left: 30px;
+        margin-right: 80px;
+    }
+    
+    .bottle-2{
+        margin-right: 120px;
+        padding-right: 40px;
+        margin-left: 60px;
+    }
+
+    .button {
+        width: 70%;
+        font-size: 12px;
+        height: 60px;
+    }
+
+    .button-1 {
+        margin-left: 60px;
+        margin-right: 100px;
+    }
+    
+    .button-2 {
+        margin-right: 120px;
+        margin-left: 90px;
+    }
+
+    .circle1{
+        background-color: white;
+        top: 100px;
+        right: 150px;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    .circle2{
+        background-color: white;
+        top: 130px;
+        right: 170px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .circle3{
+        background-color: white;
+        position: absolute;
+        top: 120px;
+        right: 130px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-div-two-bottles-div{
+        margin-top: 100px;
+    }
+
+    .button-2 {
+        margin-top: 25px;
+    }
+
+    .social-media-div{
+        position: absolute;
+        top: 280px;
+        left: 15px;
+    }
+    
+    .social-icon{
+        font-size: 40px;
+        color: white;
+        margin: 10px;
+    }
+
+    .picture-div .img{
+        background-image: url(../src/imgs/about-img.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        margin-left: 100px;
+    }
+
+    .navigation h5{
+        font-size: 13px;
+    }  
+
+    .about-nalivki-header h2{
+        font-size: 18px;
+    }
+
+    .about-nalivki-paragraph p{
+        font-size: 13px;
+    }
+
+    .about-nalivki-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo-about{
+        width: 50px;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .bottle{
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .button {
+        width: 50%;
+        height: 40px;
+    }
+
+    .bottle-2{
+        width: 42%;
+        margin-right: 30px;
+    }
+
+    .bottle-div{
+        text-align: center;
+    }
+
+    .bottle-div-2{
+        margin-top: 50px;
+    }
+
+    .main-div-two-bottles-div{
+        margin-top: 0;
+    }
+
+    .picture-div .img{
+        height: 200px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .img-about-bar{
+        border: 4px solid white;
+        -webkit-box-shadow: 0px 0px 0px 0px #A82020;
+        -moz-box-shadow: 0px 0px 0px 0px #A82020;
+        box-shadow: 0px 0px 0px 0px #A82020;
+    }
+
+    .navigation h5{
+        font-size: 8px;
+    }  
+
+    .about-nalivki-header h2{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .about-nalivki-paragraph p{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .about-nalivki-text{
+        padding: 10px 15px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 340px;
+    }
+
+    .logo-about{
+        width: 50px;
+    }
+
+    .social-media-div{
+        top: 380px;
+    }
+} 
